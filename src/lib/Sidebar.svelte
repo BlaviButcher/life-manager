@@ -1,9 +1,5 @@
 <script lang="ts">
-	import { Home } from 'carbon-icons-svelte';
-
 	import type { SvelteComponent } from 'svelte';
-	import { fade } from 'svelte/transition';
-	import { flip } from 'svelte/animate';
 
 	type Icon = {
 		icon: typeof SvelteComponent;
