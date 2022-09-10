@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Sidebar from '$lib/Sidebar.svelte';
-	import { Home } from 'carbon-icons-svelte';
+	import { CheckboxChecked, Home, List, Settings } from 'carbon-icons-svelte';
 </script>
 
 <Sidebar
@@ -11,12 +11,12 @@
 			label: 'Home'
 		},
 		{
-			icon: Home,
-			label: 'Home'
+			icon: CheckboxChecked,
+			label: 'Todo'
 		},
 		{
-			icon: Home,
-			label: 'Home'
+			icon: Settings,
+			label: 'Settings'
 		}
 	]}
 />
