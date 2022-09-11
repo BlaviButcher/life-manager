@@ -21,6 +21,7 @@
 >
 	{#each icons as i}
 		<sidebar-item>
+			<selected-indicator />
 			<sidebar-icon>
 				<svelte:component this={i.icon} class="icon" {size} />
 			</sidebar-icon>
@@ -43,6 +44,10 @@
 		display: flex;
 		align-items: center;
 		height: 3rem;
+	}
+
+	selected-indicator {
+		background-color: blue;
 	}
 
 	sidebar-item:hover {
