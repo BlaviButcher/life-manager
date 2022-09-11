@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import { page } from '$app/stores';
 
 	import type { SvelteComponent } from 'svelte';
 
@@ -27,10 +28,13 @@
 	{#each items as i}
 		<sidebar-item
 			on:click={() => {
-				goto(i.href, { replaceState: true });
+				goto(i.href);
 			}}
+			class={$page.url.pathname === i.href ? 'selected' : ''}
 		>
-			<selected-indicator />
+			<selected-indicator
+				style={$page.url.pathname === i.href ? 'visibility: visible' : 'visibility: hidden'}
+			/>
 			<sidebar-icon>
 				<svelte:component this={i.icon} class="icon" {size} />
 			</sidebar-icon>
@@ -83,5 +87,9 @@
 		text-align: left;
 		overflow: hidden;
 		margin-left: 1rem;
+	}
+
+	.selected {
+		background-color: #e4e5e4;
 	}
 </style>
