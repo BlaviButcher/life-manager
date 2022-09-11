@@ -25,11 +25,21 @@
 			}
 		]}
 	/>
-	<slot />
+	<page-content>
+		<slot />
+	</page-content>
 </main>
 
 <style>
 	main {
 		display: flex;
+	}
+
+	page-content {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		/* balance page due to vertical sidebar nav */
+		padding-right: 3rem;
 	}
 </style>
