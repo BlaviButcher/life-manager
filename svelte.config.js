@@ -1,7 +1,6 @@
 import cloudflare from '@sveltejs/adapter-cloudflare';
 import preprocess from 'svelte-preprocess';
 // svelte.config.js
-import { icons } from 'carbon-preprocess-svelte';
 
 // svelte.config.js
 import { optimizeImports } from 'carbon-preprocess-svelte';

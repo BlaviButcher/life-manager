@@ -1,4 +1,4 @@
-<!-- <script lang="ts">
+<script lang="ts">
 </script>
 
 <page-content>
@@ -32,7 +32,6 @@
 		--primary-light: #6b9ac4;
 		--primary-dark: #1d3557;
 		--secondary: #97d8c4;
-		;
 	}
 
 	h1 {
@@ -45,4 +44,4 @@
 		margin-top: 1rem;
 		line-height: 1.5rem;
 	}
-</style> -->
+</style>

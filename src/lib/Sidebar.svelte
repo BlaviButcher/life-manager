@@ -45,14 +45,14 @@
 
 <style>
 	item-buffer {
-		position: absolute;
+		position: relative;
 		width: 3rem;
 		height: 100vh;
 		opacity: 0;
 	}
 	sidebar-navigation {
 		display: inline-block;
-		position: sticky;
+		position: fixed;
 		flex-direction: column;
 		height: 100vh;
 		background: rgb(128, 98, 234);
@@ -64,7 +64,6 @@
 		);
 		transition: 0.5s;
 		width: 3rem;
-		margin-right: 3rem;
 		color: #fcf8ff;
 		flex: 1;
 	}
