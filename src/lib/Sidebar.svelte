@@ -45,19 +45,28 @@
 
 <style>
 	item-buffer {
+		position: absolute;
 		width: 3rem;
 		height: 100vh;
 		opacity: 0;
 	}
 	sidebar-navigation {
 		display: inline-block;
-		position: absolute;
+		position: sticky;
 		flex-direction: column;
 		height: 100vh;
-		background-color: #eff1f3;
+		background: rgb(128, 98, 234);
+		background: linear-gradient(
+			180deg,
+			rgba(128, 98, 234, 1) 0%,
+			rgba(98, 79, 190, 1) 50%,
+			rgba(79, 66, 163, 1) 100%
+		);
 		transition: 0.5s;
 		width: 3rem;
 		margin-right: 3rem;
+		color: #fcf8ff;
+		flex: 1;
 	}
 
 	sidebar-item {
@@ -70,12 +79,24 @@
 		position: absolute;
 		height: 3rem;
 		width: 5px;
-		background-color: #1565fd;
+		background: rgb(124, 245, 219);
+		background: linear-gradient(
+			180deg,
+			rgba(124, 245, 219, 1) 0%,
+			rgba(92, 207, 226, 1) 50%,
+			rgba(108, 161, 212, 1) 100%
+		);
 		z-index: 5;
 	}
 
 	sidebar-item:hover {
-		background-color: #e4e5e4;
+		background: rgb(85, 69, 170);
+		background: linear-gradient(
+			90deg,
+			rgba(85, 69, 170, 1) 0%,
+			rgba(94, 73, 179, 1) 50%,
+			rgba(102, 79, 192, 1) 100%
+		);
 	}
 
 	sidebar-icon {
@@ -90,6 +111,12 @@
 	}
 
 	.selected {
-		background-color: #e4e5e4;
+		background: rgb(85, 69, 170);
+		background: linear-gradient(
+			90deg,
+			rgba(85, 69, 170, 1) 0%,
+			rgba(94, 73, 179, 1) 50%,
+			rgba(102, 79, 192, 1) 100%
+		);
 	}
 </style>
