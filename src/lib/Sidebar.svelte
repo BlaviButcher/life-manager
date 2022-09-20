@@ -79,23 +79,13 @@
 		height: 3rem;
 		width: 5px;
 		background: rgb(124, 245, 219);
-		background: linear-gradient(
-			180deg,
-			rgba(124, 245, 219, 1) 0%,
-			rgba(92, 207, 226, 1) 50%,
-			rgba(108, 161, 212, 1) 100%
-		);
+		background: var(--secondary-gradient);
 		z-index: 5;
 	}
 
 	sidebar-item:hover {
 		background: rgb(85, 69, 170);
-		background: linear-gradient(
-			90deg,
-			rgba(85, 69, 170, 1) 0%,
-			rgba(94, 73, 179, 1) 50%,
-			rgba(102, 79, 192, 1) 100%
-		);
+		background: var(--primary-gradient);
 	}
 
 	sidebar-icon {
@@ -107,15 +97,11 @@
 		text-align: left;
 		overflow: hidden;
 		margin-left: 1rem;
+		white-space: nowrap;
 	}
 
 	.selected {
 		background: rgb(85, 69, 170);
-		background: linear-gradient(
-			90deg,
-			rgba(85, 69, 170, 1) 0%,
-			rgba(94, 73, 179, 1) 50%,
-			rgba(102, 79, 192, 1) 100%
-		);
+		background: var(--primary-gradient);
 	}
 </style>
