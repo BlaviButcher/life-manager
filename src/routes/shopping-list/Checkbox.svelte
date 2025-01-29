@@ -1,15 +1,15 @@
 <script lang="ts">
 	export let size = 1.5;
 
-	let checked = false;
+	export let completed = false;
 </script>
 
 <div
 	style={`height: ${size}rem; width: ${size}rem;`}
 	on:click={() => {
-		checked = !checked;
+		completed = !completed;
 	}}
-	class={checked ? 'checked' : ''}
+	class={completed ? 'checked' : ''}
 />
 
 <style>
